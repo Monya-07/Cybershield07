@@ -8,6 +8,7 @@
   <!-- Animate CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/styles.css">
+      <link rel="stylesheet" href="chatbot2.css" />
   <style>
     body {
       background-color: #0f172a;
@@ -181,5 +182,24 @@
             }
         });
     });
-</script></body>
-</html>
+</script>
+
+    <div id="chatbot-icon">💬</div>
+    <div id="chatbot-container" class="hidden">
+      <div id="chatbot-header">
+        <span>CyberShield Chatbot</span>
+        <button id="close-btn">&times;</button>
+      </div>
+      <div id="chatbot-body">
+        <div id="chatbot-messages"></div>
+      </div>
+      <div id="chatbot-input-container">
+        <input type="text" id="chatbot-input" placeholder="Type a message" />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+    <script src="chatbot2.js"></script>
+
+
+</body>
+                  </html>
