@@ -1,0 +1,283 @@
+/* 🔹 General Styles */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 🔹 Navbar */
+header {
+    background: #aaa;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* 🔹 Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* 🔹 right: ;esponsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* 🔹 Ensure Navbar Works on PC */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+    }
+}
+.login-btn {
+    background-color: #00bcd4;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.bg-light {
+    background-color: #212529 !important; /* Darker Gray Background */
+    color: #e0e0e0 !important; /* Light Gray Text */
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff9900; /* Brighter CyberShield Yellow-Orange */
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+    color: #ffffff !important; /* Pure White for Maximum Contrast */
+}
+
+.list-unstyled a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #ffffff !important; /* Pure White */
+}
+
+.list-unstyled a:hover {
+    color: #ff9900;
+    font-weight: 600; /* Stronger hover effect */
+}
+
+.mt-3 i {
+    font-size: 20px;
+    color: #ff9900; /* Updated Icon Color */
+}
+
+
+
+
+
+
+
+
+
+
+section {
+  min-height: 57vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 2em 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #212529 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: background-position 0.5s, transform 0.3s ease-in-out;
+}
+.card:hover {
+  background-position: 0 100%;
+  transform: translateY(-5px);
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 1em 0;
+  transition: color 0.3s ease-in-out;
+}
+p {
+  color: whitesmoke;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  transition: color 0.3s ease-in-out;
+}
+.icon-wrapper {
+  background-color: #212529;
+  position: relative;
+  margin: auto;
+  font-size: 30px; /* Ensure icon size is balanced */
+  height: 3.5em;
+  width: 3.5em;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent icon from spilling out */
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #212529;
+}
+.card:hover h3, .card:hover p {
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+
+
+
+/* 🔹 Hero Section with Background Image */
+.hero {
+    height: 30vh; /* Adjust height to match the required area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+
+/* 🔹 Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+}
+.get{
+  h3{
+   color: white;
+  }
+}
+
+
+.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.logo img {
+    filter: drop-shadow(0px 0px 15px cyan);
+}
+
+
+.glow-logo {
+  filter: drop-shadow(0 0 10px #00ffff) drop-shadow(0 0 20px #00ffff);
+  transition: transform 0.3s ease;
+}
+
+.glow-logo:hover {
+  transform: scale(1.05);
+}
