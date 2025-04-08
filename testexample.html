@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Multi-Theme Toggle</title>
+    <style>
+        /* Default Light Mode */
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark Mode (Cyber Style) */
+        body.dark-mode {
+            background-color: #0a192f; /* Dark Blue */
+            color: #00ffcc; /* Neon Green */
+        }
+
+        /* Cyber Blue Mode */
+        body.blue-mode {
+            background-color: black;
+            color: #00aaff; /* Neon Blue */
+        }
+
+        /* Toggle Button */
+        .theme-toggle {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            background-color: #007bff;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CyberShield</h1>
+    <p>Welcome to CyberShield - Secure Your Digital World!</p>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">🌙 Switch Theme</button>
+
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        let currentTheme = localStorage.getItem("theme") || "light";
+
+        // Apply saved theme on page load
+        document.body.classList.add(currentTheme);
+
+        function switchTheme() {
+            if (currentTheme === "light") {
+                currentTheme = "dark-mode";
+            } else if (currentTheme === "dark-mode") {
+                currentTheme = "blue-mode";
+            } else {
+                currentTheme = "light";
+            }
+            
+            document.body.className = currentTheme; // Apply theme
+            localStorage.setItem("theme", currentTheme); // Save theme
+        }
+
+        toggleButton.addEventListener("click", switchTheme);
+    </script>
+
+</body>
+</html>

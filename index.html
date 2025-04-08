@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShield - Home</title>  <!-- Bootstrap CSS -->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-hero-bg.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .feature-box, .service-box, .team-box, .testimonial-box {
+      background-color: #1e293b;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+  </style></head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-3">
+    
+    <!-- Logo (Left) -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./assets/img/logo/logo.png" width="50" height="50" class="glow-logo me-2" alt="CyberShield Logo">
+      <span class="fw-bold text-warning">CyberShield</span>
+    </a>
+
+    <!-- Toggler (Mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Items (Right on Desktop, Full on Mobile) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="ms-auto w-100">
+        <ul class="navbar-nav d-flex flex-column flex-md-row justify-content-md-end text-center text-md-start">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            <hr class="bg-warning d-md-none w-100 my-1">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+            <hr class="bg-warning d-md-none w-100 my-1">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-warning" href="about.html">About</a>
+            <hr class="bg-warning d-md-none w-100 my-1">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+            <hr class="bg-warning d-md-none w-100 my-1">
+          </li>
+
+          <!-- Mobile Login Button (Full Width) -->
+          <li class="nav-item d-md-none">
+            <a href="login.html" class="btn btn-outline-warning w-100 my-2">
+              <i class="fa-solid fa-circle-user"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desktop Login Button (Far Right) -->
+      <div class="d-none d-md-block ms-3">
+        <a href="login.html" class="btn btn-outline-warning">
+          <i class="fa-solid fa-circle-user"></i> Login
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+    
+    <!-- Hero Section -->  <section class="hero text-white">
+    <div class="container">
+      <h1 class="mb-3 animate__animated animate__fadeInDown">Secure Your Digital World</h1>
+      <p class="lead animate__animated animate__fadeInUp">CyberShield provides next-gen cybersecurity solutions.</p>
+      <a href="#services" class="btn btn-warning mt-3">Explore Services</a>
+    </div>
+  </section>  <!-- Features Section -->  <section id="features" class="py-5 text-center">
+    <div class="container">
+      <h2 class="text-warning mb-4">Our Security Features</h2>
+      <div class="row">
+        <div class="col-md-3 feature-box">Firewall Protection</div>
+        <div class="col-md-3 feature-box">Threat Detection</div>
+        <div class="col-md-3 feature-box">Data Encryption</div>
+        <div class="col-md-3 feature-box">AI Monitoring</div>
+      </div>
+    </div>
+  </section>  <!-- Portfolio Section -->  <section id="portfolio" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="text-warning mb-4">Our Portfolio</h2>
+      <p>Real-world success stories and project highlights.</p>
+    </div>
+  </section>  <!-- About Us Section -->  <section id="about" class="py-5 text-center">
+    <div class="container">
+      <h2 class="text-warning mb-4">About Us</h2>
+      <p>CyberShield is your trusted cybersecurity partner with innovative tech, expert team, and 24/7 vigilance.</p>
+    </div>
+  </section>  <!-- News Section -->  <section id="news" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="text-warning mb-4">Cybersecurity News</h2>
+      <p>Stay updated with the latest threats and protection insights.</p>
+    </div>
+  </section>  
+  
+  
+  <!-- Footer -->  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>CyberShield</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Why CyberShield?</a></li>
+            <li><a href="#features" class="text-light">Our Security Features</a></li>
+            <li><a href="#portfolio" class="text-light">Our Portfolio</a></li>
+            <li><a href="#about" class="text-light">About Us</a></li>
+            <li><a href="#news" class="text-light">Cybersecurity News</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Privacy Policy</a></li>
+            <li><a href="#" class="text-light">Terms & Conditions</a></li>
+            <li><a href="#" class="text-light">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Threat Intelligence</a></li>
+            <li><a href="#" class="text-light">Network Security</a></li>
+            <li><a href="#" class="text-light">Incident Response</a></li>
+            <li><a href="#" class="text-light">Risk Management</a></li>
+            <li><a href="#" class="text-light">Cloud Security</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt text-warning"></i> Kalyan-Murbad Road, Bapsai, Maharashtra 421103</p>
+          <p><i class="fas fa-envelope text-warning"></i> contact@cybershield.com</p>
+          <p><i class="fas fa-phone text-warning"></i> +91 87xxx 3xx77</p>
+        </div>
+      </div>
+      <div class="text-center pt-3">
+        <p>&copy; 2025 CyberShield | Secure Your Digital World</p>
+      </div>
+    </div>
+  </footer>  <!-- Bootstrap & JS -->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>  <script> new WOW().init(); </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentLocation = window.location.pathname.split("/").pop();
+        if (currentLocation === "") currentLocation = "index.html";
+
+        let navLinks = document.querySelectorAll(".nav-item .nav-link");
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentLocation) {
+                link.classList.add("active", "text-warning");
+            } else {
+                link.classList.remove("active", "text-warning");
+            }
+        });
+    });
+</script></body>
+</html>
